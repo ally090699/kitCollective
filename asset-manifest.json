@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/ally090699/Kit-Collective.git/static/css/main.559cb805.chunk.css",
+    "main.js": "/ally090699/Kit-Collective.git/static/js/main.dab6f4c0.chunk.js",
+    "main.js.map": "/ally090699/Kit-Collective.git/static/js/main.dab6f4c0.chunk.js.map",
+    "runtime-main.js": "/ally090699/Kit-Collective.git/static/js/runtime-main.4ef3ca73.js",
+    "runtime-main.js.map": "/ally090699/Kit-Collective.git/static/js/runtime-main.4ef3ca73.js.map",
+    "static/js/2.81dee355.chunk.js": "/ally090699/Kit-Collective.git/static/js/2.81dee355.chunk.js",
+    "static/js/2.81dee355.chunk.js.map": "/ally090699/Kit-Collective.git/static/js/2.81dee355.chunk.js.map",
+    "index.html": "/ally090699/Kit-Collective.git/index.html",
+    "precache-manifest.649f3e28033ced03af1748ffdcd351aa.js": "/ally090699/Kit-Collective.git/precache-manifest.649f3e28033ced03af1748ffdcd351aa.js",
+    "service-worker.js": "/ally090699/Kit-Collective.git/service-worker.js",
+    "static/css/main.559cb805.chunk.css.map": "/ally090699/Kit-Collective.git/static/css/main.559cb805.chunk.css.map",
+    "static/media/about-1.jpg": "/ally090699/Kit-Collective.git/static/media/about-1.ac4e5a7d.jpg",
+    "static/media/about-2.jpg": "/ally090699/Kit-Collective.git/static/media/about-2.95325c75.jpg",
+    "static/media/aboutteam-1.jpg": "/ally090699/Kit-Collective.git/static/media/aboutteam-1.807b4f4c.jpg",
+    "static/media/aboutteam-2.jpg": "/ally090699/Kit-Collective.git/static/media/aboutteam-2.4e7fb59e.jpg",
+    "static/media/aboutteam-3.jpg": "/ally090699/Kit-Collective.git/static/media/aboutteam-3.c73edc43.jpg",
+    "static/media/banner.jpg": "/ally090699/Kit-Collective.git/static/media/banner.7ce0e8b8.jpg",
+    "static/media/carousel-1.jpg": "/ally090699/Kit-Collective.git/static/media/carousel-1.e05d4464.jpg",
+    "static/media/carousel-2.jpg": "/ally090699/Kit-Collective.git/static/media/carousel-2.2f5f31ee.jpg",
+    "static/media/carousel-3.jpg": "/ally090699/Kit-Collective.git/static/media/carousel-3.5b94fe69.jpg",
+    "static/media/styles.css": "/ally090699/Kit-Collective.git/static/media/parallax.00158d33.jpg",
+    "static/media/product-1.jpg": "/ally090699/Kit-Collective.git/static/media/product-1.8c75c4df.jpg",
+    "static/media/product-2.jpg": "/ally090699/Kit-Collective.git/static/media/product-2.b0a4e707.jpg",
+    "static/media/product-3.jpg": "/ally090699/Kit-Collective.git/static/media/product-3.b3699668.jpg",
+    "static/media/product-4.jpg": "/ally090699/Kit-Collective.git/static/media/product-4.6603c996.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ef3ca73.js",
+    "static/js/2.81dee355.chunk.js",
+    "static/css/main.559cb805.chunk.css",
+    "static/js/main.dab6f4c0.chunk.js"
+  ]
+}
