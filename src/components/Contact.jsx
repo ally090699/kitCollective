@@ -119,62 +119,76 @@ export default function Contact() {
     };
 
     // Handle form submission
-    const handleSubmit = (e) => {
-      e.preventDefault();
+    const handleSubmit = async (e) => {
+        e.preventDefault();
     
-      // Run validation checks before submission
-      checkName(formData.name);
-      checkEmail(formData.email);
-      checkMessage(formData.message);
-      if (formData.status === "productinfo") {
-          checkProductID(formData.productID);
-      }
+        // Run validation checks before submission
+        checkName(formData.name);
+        checkEmail(formData.email);
+        checkMessage(formData.message);
+        if (formData.status === "productinfo") {
+            checkProductID(formData.productID);
+        }
     
-      // Check if any errors exist
-      const hasErrors = Object.values(errors).some((error) => error);
+        // Check if any errors exist
+        const hasErrors = Object.values(errors).some((error) => error);
     
-      if (hasErrors) {
-          setStatusMessages((prev) => ({
-              ...prev,
-              general: "Please fix the errors before submitting.",
-          }));
-          return;
-      }
+        if (hasErrors) {
+            setStatusMessages((prev) => ({
+                ...prev,
+                general: "Please fix the errors before submitting.",
+            }));
+            return;
+        }
     
-      fetch('http://localhost:5000/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data.message);
-          // Handle success (e.g., show a success message, reset form)
-          setFormData({
-            name: "",
-            phone: "",
-            email: "",
-            status: "",
-            productID: "",
-            message: "",
-          });
-          setStatusMessages((prev) => ({
-              ...prev,
-              general: "Form submitted successfully!",
-          }));
+        try {
+            // Send form data to the backend
+            const response = await fetch('http://localhost:5001/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
     
-          //history.push('/thankyou');
-        })
-        .catch((error) => {
-          console.error('Error:', error);
-          setStatusMessages((prev) => ({
-              ...prev,
-              general: "There was an error submitting the form. Please try again later.",
-          }));
-
-          //history.push('/error');
-        })
+            if (response.ok) {
+                // Parse the JSON response from the server
+                const data = await response.json();
+                console.log(data.message);  // Logs: 'Form submitted successfully!'
+    
+                // Handle success (e.g., show a success message, reset form)
+                setFormData({
+                    name: "",
+                    phone: "",
+                    email: "",
+                    status: "",
+                    productID: "",
+                    message: "",
+                });
+                setStatusMessages((prev) => ({
+                    ...prev,
+                    general: "Form submitted successfully!",
+                }));
+    
+                // Optionally redirect or do something else on success
+                // history.push('/thankyou');
+            } else {
+                console.error('Form submission failed:', response.statusText);
+                setStatusMessages((prev) => ({
+                    ...prev,
+                    general: "There was an issue submitting the form. Please try again.",
+                }));
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            setStatusMessages((prev) => ({
+                ...prev,
+                general: "There was an error submitting the form. Please try again later.",
+            }));
+    
+            // Optionally redirect to an error page
+            // history.push('/error');
+        }
     };
+    
     
 
     return (

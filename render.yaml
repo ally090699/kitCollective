@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: kit-collective-frontend
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    pullRequestPreviewsEnabled: true
+    envVars:
+      - key: REACT_APP_BACKEND_URL
+        value: "https://kit-collective-backend.onrender.com"
