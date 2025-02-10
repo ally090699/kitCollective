@@ -142,8 +142,9 @@ export default function Contact() {
         }
     
         try {
-            // Send form data to the backend
-            const response = await fetch('http://localhost:5001/submit', {
+            const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5001';
+
+            const response = await fetch(`${backendUrl}/submit`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
