@@ -25,7 +25,7 @@ const appendToCSV = (data) => {
   });
 };
 
-app.post('/submit', (req, res) => {
+/*app.post('/submit', (req, res) => {
   const formData = req.body;
   
   // Assuming validation is handled here as well (can add more checks)
@@ -37,7 +37,7 @@ app.post('/submit', (req, res) => {
 
   // Send success response
   res.status(200).json({ message: 'Form submitted successfully' });
-});
+});*/
 
 app.listen(port, () => {
   console.log(`Backend is running on http://localhost:${port}`);
