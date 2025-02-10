@@ -12,7 +12,7 @@ import "../styles.css";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/Kit-Collective">
       <div className="content-wrapper">
         <Header />
         <div className="main-content">
