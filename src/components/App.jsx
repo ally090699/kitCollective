@@ -18,7 +18,7 @@ export default function App() {
         <Header />
         <div className="main-content">
           <Switch>
-            <Route default path="/" component={Homepage} />
+            <Route exact path="/" component={Homepage} />
             <Route path="/about" component={About} />
             <Route path="/products" component={Products} />
             <Route path="/contact" component={Contact} />
