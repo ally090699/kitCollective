@@ -163,7 +163,7 @@ export default function Contact() {
               general: "Form submitted successfully!",
           }));
     
-          history.push('/thankyou');
+          //history.push('/thankyou');
         })
         .catch((error) => {
           console.error('Error:', error);
@@ -172,7 +172,7 @@ export default function Contact() {
               general: "There was an error submitting the form. Please try again later.",
           }));
 
-          history.push('/error');
+          //history.push('/error');
         })
     };
     

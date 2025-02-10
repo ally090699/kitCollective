@@ -1,6 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 const port = 5000;
@@ -19,12 +20,12 @@ const appendToCSV = (data) => {
   fs.appendFile(csvFilePath, csvData, (err) => {
     if (err) {
       console.error('Error writing to CSV file:', err);
-      // Send failure response in case of error
       return;
     }
   });
 };
 
+// Handle the form submission
 app.post('/submit', (req, res) => {
   const formData = req.body;
   
@@ -37,6 +38,14 @@ app.post('/submit', (req, res) => {
 
   // Send success response
   res.status(200).json({ message: 'Form submitted successfully' });
+});
+
+// Serve static files from the React app (build directory)
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+// Catch-all handler to serve the React app for any route not explicitly defined
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
 app.listen(port, () => {
