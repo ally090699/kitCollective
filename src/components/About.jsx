@@ -1,7 +1,7 @@
 import React from "react";
 import teammembers from "./lists/teammembers";
-import img1 from "../img/about-1.jpg";
-import img2 from "../img/about-2.jpg";
+import img1 from "../public/img/about-1.jpg";
+import img2 from "../public/img/about-2.jpg";
 
 import Member from "./Member";
 
