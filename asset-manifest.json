@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Kit-Collective/static/css/main.081873d7.chunk.css",
-    "main.js": "/Kit-Collective/static/js/main.cd526414.chunk.js",
-    "main.js.map": "/Kit-Collective/static/js/main.cd526414.chunk.js.map",
+    "main.js": "/Kit-Collective/static/js/main.3309e19c.chunk.js",
+    "main.js.map": "/Kit-Collective/static/js/main.3309e19c.chunk.js.map",
     "runtime-main.js": "/Kit-Collective/static/js/runtime-main.713c4a86.js",
     "runtime-main.js.map": "/Kit-Collective/static/js/runtime-main.713c4a86.js.map",
     "static/js/2.81dee355.chunk.js": "/Kit-Collective/static/js/2.81dee355.chunk.js",
     "static/js/2.81dee355.chunk.js.map": "/Kit-Collective/static/js/2.81dee355.chunk.js.map",
     "index.html": "/Kit-Collective/index.html",
-    "precache-manifest.3c58b225cc39fed5b73843678d64760c.js": "/Kit-Collective/precache-manifest.3c58b225cc39fed5b73843678d64760c.js",
+    "precache-manifest.d0e4ad159a4ccb73b81b3a906e78cec4.js": "/Kit-Collective/precache-manifest.d0e4ad159a4ccb73b81b3a906e78cec4.js",
     "service-worker.js": "/Kit-Collective/service-worker.js",
     "static/css/main.081873d7.chunk.css.map": "/Kit-Collective/static/css/main.081873d7.chunk.css.map",
     "static/media/about-1.jpg": "/Kit-Collective/static/media/about-1.ac4e5a7d.jpg",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.713c4a86.js",
     "static/js/2.81dee355.chunk.js",
     "static/css/main.081873d7.chunk.css",
-    "static/js/main.cd526414.chunk.js"
+    "static/js/main.3309e19c.chunk.js"
   ]
 }
