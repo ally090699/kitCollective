@@ -3,6 +3,7 @@ services:
     name: kit-collective-frontend
     env: static
     buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: npm start
     staticPublishPath: build
     pullRequestPreviewsEnabled: true
     envVars:

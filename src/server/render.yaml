@@ -2,5 +2,5 @@ services:
   - type: web
     name: kit-collective-backend
     env: node
-    buildCommand: npm install  # Install dependencies for the backend
+    buildCommand: npm install --legacy-peer-deps # Install dependencies for the backend
     startCommand: node server.js  # Or the command to start your backend server
