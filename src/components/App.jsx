@@ -8,7 +8,6 @@ import Products from "./Products";
 import Contact from "./Contact";
 import ThankYou from "./ThankYou";
 import Error from "./Error";
-
 import "../styles.css";
 
 export default function App() {
