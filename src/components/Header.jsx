@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bannerImg from "../public/img/banner.jpg"
+import bannerImg from "../assets/banner.jpg"
 
 export default function Header() {
   return (

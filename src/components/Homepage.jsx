@@ -1,8 +1,8 @@
 import React from "react";
 import Carousel from "./Carousel";
-import img1 from "../public/img/carousel-1.jpg"
-import img2 from "../public/img/carousel-2.jpg"
-import img3 from "../public/img/carousel-3.jpg"
+import img1 from "../assets/carousel-1.jpg"
+import img2 from "../assets/carousel-2.jpg"
+import img3 from "../assets/carousel-3.jpg"
 
 export default function Homepage(){
     return(

@@ -207,7 +207,7 @@ position:absolute;
 .parallax-img{
   width: 100%;
   height: auto;
-  background-image: url('../public/img/parallax.jpg');
+  background-image: url('./assets/parallax.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
@@ -247,7 +247,7 @@ position:absolute;
   justify-content: space-evenly; /* Ensures even spacing */
   gap: 10px;
   padding: 20px;
-  background-image: url("../public/img/padded.png");
+  background-image: url("./assets/padded.png");
   background-color: #bda9969d;
   background-blend-mode: luminosity;
   max-width: 100%;

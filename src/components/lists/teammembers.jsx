@@ -1,6 +1,6 @@
-import img1 from "../../public/img/aboutteam-1.jpg";
-import img2 from "../../public/img/aboutteam-2.jpg";
-import img3 from "../../public/img/aboutteam-3.jpg";
+import img1 from "../../assets/aboutteam-1.jpg";
+import img2 from "../../assets/aboutteam-2.jpg";
+import img3 from "../../assets/aboutteam-3.jpg";
 
 
 const teammembers = [
