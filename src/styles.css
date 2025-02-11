@@ -165,8 +165,8 @@ label, #contactform h6{
   font-size: 18px;
   padding: 5px 10px;
   background-color: white;
-  color: #58422a;
-  border: solid 1px #58422a;
+  color: #010bc4;
+  border: solid 1px #010bc4;
   border-radius: 10px;
   opacity: 0.3;
   transition: opacity 0.5s ease;
@@ -174,7 +174,7 @@ label, #contactform h6{
 
 #backToTopBtn:hover {
   opacity: 1;
-  background-color: #58422a;
+  background-color: #010bc4;
   color: white;
   border: none;
 }

@@ -11,6 +11,14 @@ import Error from "./Error";
 import "../styles.css";
 
 export default function App() {
+  function backToTop(event){
+    event.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+  }
+  
   return (
     <Router basename="/kitCollective">
       <div className="content-wrapper">
@@ -25,6 +33,7 @@ export default function App() {
             <Route path="/error" component={Error} />
           </Switch>
         </div>
+        <button onClick={backToTop} id="backToTopBtn" title="Back to Top">↑</button>
         <Footer />
       </div>
     </Router>
