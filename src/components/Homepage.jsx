@@ -15,7 +15,7 @@ export default function Homepage(){
             msg = "Have a Soft & Snuggly Sunday !"; 
         }
         else if (day == 1) { 
-            msg = "Have an Marvelously Made Monday!"; 
+            msg = "Have a Marvelously Made Monday!"; 
         }
         else if (day == 2) { 
             msg = "Have a Tangle-Free Tuesday!"; 
