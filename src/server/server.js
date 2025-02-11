@@ -53,7 +53,18 @@ app.post("/submit", (req, res) => {
     });
 });
 
+app.use(express.static(path.join(__dirname, 'build')));
+
 app.use('/static', express.static(path.join(__dirname, 'build/static')));
+
+app.use((req, res, next) => {
+  if (req.url.endsWith('.css')) {
+    res.setHeader('Content-Type', 'text/css');
+  } else if (req.url.endsWith('.js')) {
+    res.setHeader('Content-Type', 'application/javascript');
+  }
+  next();
+});
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
