@@ -1,5 +1,6 @@
 const express = require("express");
 const { Client } = require("pg");
+const path = require('path');
 const cors = require('cors');
 const bodyParser = require("body-parser");
 
@@ -53,6 +54,10 @@ app.post("/submit", (req, res) => {
 });
 
 app.use('/static', express.static(path.join(__dirname, 'build/static')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 app.listen(port, () => {
   console.log(`Backend is running on http://localhost:${port}`);
