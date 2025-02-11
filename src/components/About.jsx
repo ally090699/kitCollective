@@ -19,7 +19,7 @@ export default function About(){
     }
 
     return(
-        <div class="container-fluid w-100"  onScroll={scrollFunction()}>
+        <div class="container-fluid w-100"  onScroll={scrollFunction}>
             <section id="aboutsect">
                 <div data-bs-offset="0" >
                     <h4 id="about-title"><span role="img" aria-label="Girl emoji">👩🏻</span> About Us</h4>
