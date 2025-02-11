@@ -52,6 +52,8 @@ app.post("/submit", (req, res) => {
     });
 });
 
+app.use('/static', express.static(path.join(__dirname, 'build/static')));
+
 app.listen(port, () => {
   console.log(`Backend is running on http://localhost:${port}`);
 });
