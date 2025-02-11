@@ -6,9 +6,20 @@ import img2 from "../assets/about-2.jpg";
 import Member from "./Member";
 
 export default function About(){
+    function scrollFunction() {
+        //enhanced parallax
+        var scroll = window.scrollY;
+        var outer = document.getElementById("memberlist");
+        var m = -0.5;
+        var b = 0;
+        
+        var newTop = m*scroll + b;
+        
+        outer.style.backgroundPositionY = newTop + "px";
+    }
+
     return(
-        <div class="container-fluid w-100">
-            <a name="about" id="s2"></a>
+        <div class="container-fluid w-100"  onScroll={scrollFunction()}>
             <section id="aboutsect">
                 <div data-bs-offset="0" >
                     <h4 id="about-title"><span role="img" aria-label="Girl emoji">👩🏻</span> About Us</h4>
@@ -23,7 +34,6 @@ export default function About(){
                     </div>
                 </div>
             </section>
-            <a name="team" id="s3"></a>
             <section id="aboutteam">
                 <div>
                     <h4 id="team-title">Our Team</h4>

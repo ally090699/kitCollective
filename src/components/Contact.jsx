@@ -194,7 +194,6 @@ export default function Contact() {
 
     return (
         <div className="container-fluid">
-            <a name="contact" id="s5"></a>
             <section id="contactsect">
                 <div data-bs-offset="0">
                     <h4 id="contact-title">📞 Contact Us</h4>
