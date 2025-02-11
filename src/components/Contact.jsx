@@ -142,7 +142,7 @@ export default function Contact() {
         }
     
         try {
-            const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5001';
+            const backendUrl = "https://kit-collective.onrender.com";
 
             const response = await fetch(`${backendUrl}/submit`, {
                 method: 'POST',

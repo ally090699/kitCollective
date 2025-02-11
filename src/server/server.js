@@ -8,7 +8,7 @@ const app = express();
 const port = 5001;
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({origin:"https://kit-collective-snh4.onrender.com"}));
 
 const client = new Client({
   user: "kitcollectivesubmissions_user",
@@ -53,22 +53,14 @@ app.post("/submit", (req, res) => {
     });
 });
 
-app.use(express.static(path.join(__dirname, 'build')));
-
-app.use('/static', express.static(path.join(__dirname, 'build/static')));
-
-app.use((req, res, next) => {
+/*app.use((req, res, next) => {
   if (req.url.endsWith('.css')) {
     res.setHeader('Content-Type', 'text/css');
   } else if (req.url.endsWith('.js')) {
     res.setHeader('Content-Type', 'application/javascript');
   }
   next();
-});
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
+});*/
 
 app.listen(port, () => {
   console.log(`Backend is running on http://localhost:${port}`);
